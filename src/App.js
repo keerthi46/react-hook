@@ -57,7 +57,7 @@ function App() {
         field_id: "Password",
         message: "Password is required!",
       };
-      // return { errorUsername, errorEmail, errorPassword };
+      
     }
 
     return { errorUsername, errorEmail, errorPassword };
