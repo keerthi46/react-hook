@@ -31,11 +31,7 @@ function App() {
     console.log("validation successful,form submitted");
   };
 
-    const validate = (values) => {
-    const errors = {};
-    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
-    
-  const validateForm = () => {
+   const validateForm = () => {
     let errorUsername = false;
     let errorEmail = false;
     let errorPassword = false;
@@ -52,11 +48,7 @@ function App() {
       errorEmail = {
         field_id: "Email",
         message: "Email is required!",
-        
-     else if (!regex.test(values.Email)) 
-       {
-        errorEmail = "This is not a valid email format!";
-      }
+     };
       // return error;
     }
 
