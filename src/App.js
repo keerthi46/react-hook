@@ -31,7 +31,10 @@ function App() {
     console.log("validation successful,form submitted");
   };
 
-  const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
+    const validate = (values) => {
+    const errors = {};
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
+    
   const validateForm = () => {
     let errorUsername = false;
     let errorEmail = false;
