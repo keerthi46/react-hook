@@ -48,7 +48,11 @@ function App() {
       errorEmail = {
         field_id: "Email",
         message: "Email is required!",
-      };
+        
+     else if (!regex.test(values.email)) 
+       {
+        erroremail = "This is not a valid email format!";
+      }
       // return error;
     }
 
